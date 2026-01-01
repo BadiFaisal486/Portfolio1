@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Faisal Badi — Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Personal portfolio — Your Name" />
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="brand">
+                <div class="logo">F</div>
+                <div>
+                    <div style="font-weight:800">Faisal Badi</div>
+                    <div class="muted" style="font-size:13px">Frontend Developer • Designer</div>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="intro">
+                    <h1>Hi — I'm Faisal Badi</h1>
+                    <p>I build beautiful, accessible web interfaces and delightful user experiences. I focus on
+                        responsive, fast, and maintainable front-end code.</p>
+                    <div class="cta">
+                        <a class="btn" href="#contact">Hire me</a>
+                        <a class="secondary" href="#projects">See projects</a>
+                    </div>
+
+                    <div style="margin-top:22px;display:flex;gap:12px;flex-wrap:wrap;align-items:center">
+                        <div class="skill">HTML</div>
+                        <div class="skill">CSS</div>
+                        <div class="skill">JavaScript</div>
+                        <!-- <div class="skill">React</div> -->
+                    </div>
+                </div>
+
+                <aside class="profile-card">
+                    <!-- Replace src with your photo (profile.jpg) -->
+                    <img src="my photo.jpeg" alt="Your Name — profile photo" />
+                    <div style="text-align:center">
+                        <div style="font-weight:800">Faisal Badi</div>
+                        <div class="role">Frontend Developer</div>
+                    </div>
+                    <div class="muted" style="font-size:13px;text-align:center">Available for freelance & full-time
+                        roles</div>
+                </aside>
+            </section>
+
+            <section id="about" class="grid-gap">
+                <div class="card">
+                    <h3>About me</h3>
+                    <p class="muted">I am a web developer with a passion for creating clean and accessible interfaces. I
+                        enjoy collaborating with designers and engineers to ship products that people love.</p>
+                </div>
+
+                <div style="display:grid;grid-template-columns:2fr 1fr;gap:18px;margin-top:12px">
+                    <div class="card">
+                        <h3>Featured Projects</h3>
+                        <div class="projects-grid" id="projects">
+                            <article class="project">
+                                <h4>Project One</h4>
+                                <p class="muted">A responsive landing page built with HTML & CSS. Focus on performance
+                                    and semantic markup.</p>
+                                <p style="margin-top:8px"><strong>Tech:</strong> HTML, CSS</p>
+                            </article>
+                            <!-- <article class="project">
+                                <h4>Project Two</h4>
+                                <p class="muted">A small React app demonstrating state management and animations.</p>
+                                <p style="margin-top:8px"><strong>Tech:</strong> React, Vite</p>
+                            </article> -->
+                            <article class="project">
+                                <h4>Project Two</h4>
+                                <p class="muted">A design system and component library used across multiple teams.</p>
+                                <p style="margin-top:8px"><strong>Tech:</strong> CSS Variables, Storybook</p>
+                            </article>
+                        </div>
+                    </div>
+
+                    <aside class="card">
+                        <h3>Quick info</h3>
+                        <p class="muted">363621,Wankaner</p>
+                        <p class="muted">Email: <a href="mailto:you@example.com">faisalbadi757@gmail.com</a></p>
+                        <p class="muted">Available: Open to new opportunities</p>
+                    </aside>
+                </div>
+            </section>
+
+            <section id="skills" style="margin-top:18px">
+                <h3>Skills</h3>
+                <div class="cards" style="margin-top:12px">
+                    <div class="card">
+                        <h4>Frontend</h4>
+                        <p class="muted">HTML, CSS, JavaScript</p>
+                    </div>
+                    <div class="card">
+                        <h4>Design</h4>
+                        <p class="muted">Figma, Prototyping, Design systems</p>
+                    </div>
+                    <div class="card">
+                        <h4>Tools</h4>
+                        <p class="muted">Git,GitHub</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" style="margin-top:24px">
+                <h3>Contact</h3>
+                <div style="display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:12px;align-items:start">
+                    <form class="card"
+                        onsubmit="alert('This is a demo. Replace with real form handling.'); return false;">
+                        <label style="display:block;margin-bottom:8px">Name</label>
+                        <input required
+                            style="width:100%;padding:10px;border-radius:8px;border:0;background:#071024;color:#fff;margin-bottom:10px" />
+                        <label style="display:block;margin-bottom:8px">Email</label>
+                        <input type="email" required
+                            style="width:100%;padding:10px;border-radius:8px;border:0;background:#071024;color:#fff;margin-bottom:10px" />
+                        <label style="display:block;margin-bottom:8px">Message</label>
+                        <textarea required
+                            style="width:100%;padding:10px;border-radius:8px;border:0;background:#071024;color:#fff;min-height:120px"></textarea>
+                        <div style="margin-top:12px"><button class="btn" type="submit">Send message</button></div>
+                    </form>
+
+                    <aside class="card">
+                        <h4>Reach out</h4>
+                        <p class="muted">faisalbadi757<a href="mailto:you@example.com">@example.com</a></p>
+                        <!-- <p class="muted">Follow me on: <br /><a href="#">GitHub</a> • <a href="#">LinkedIn</a> • <a href="#">Twitter</a></p> -->
+                    </aside>
+                </div>
+            </section>
+
+            <footer>
+                <div>&copy; <span id="year"></span>Faisal Badi All rights reserved.</div>
+                <div class="muted">Built with ❤️ • Responsive by design</div>
+            </footer>
+        </main>
+    </div>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
